@@ -5,7 +5,7 @@ var map;
 function init() {
 
 	var mapOptions = {
-		center: new google.maps.LatLng(40.714737,-74.187813),
+		center: new google.maps.LatLng(-37.87974,145.02301),
 		zoom: 11,
 		zoomControl: false,
 		disableDoubleClickZoom: true,
@@ -21,11 +21,11 @@ function init() {
 	var mapElement = document.getElementById('map');
 	var map = new google.maps.Map(mapElement, mapOptions);
 	var locations = [
-		['New York', 40.7147, -74.1878]
+		['Victoria', -37.87974, 145.02301]
 	];
 
 	infowindow = new google.maps.InfoWindow({
-		content: "<div style='width: 130px; height: 60px'><b>Quipe</b><br/>2880 Broadway<br/> New York</div>"  //add your address
+		content: "<div style='width: 200px; height: 80px'><b>Quipe</b><br/>242 Hawthorn Road, Caufield, Victoria, 3161 AU</div>"  //add your address
 	});
 	
 	for (i = 0; i < locations.length; i++) {
